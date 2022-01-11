@@ -139,6 +139,9 @@ class Queue {
   }
 }
 
+//------------------------------------------------
+// Making a queue out of two stack arrays.
+
 const myQueue = new Queue();
 
 myQueue.isEmpty();
