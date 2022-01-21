@@ -44,6 +44,14 @@ function memoizedFib() {
   };
 }
 
+function memoizedFib2(n) {
+  let answer = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    answer.push(answer[i - 2] + answer[i - 1]);
+  }
+  return answer.pop();
+}
+
 const memFib = memoizedFib();
 
-console.log(memFib(100));
+console.log(memoizedFib2(100));
